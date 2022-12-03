@@ -7,6 +7,6 @@
  - [x] Day 2
    - Part 1: `13446`
    - Part 2: `13509`
- - [ ] Day 3
-   - Part 1: ``
-   - Part 2: ``
+ - [x] Day 3
+   - Part 1: `8053`
+   - Part 2: `2425`
