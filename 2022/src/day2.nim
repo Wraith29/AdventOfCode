@@ -1,6 +1,8 @@
 import strutils
 
 const
+  data = staticRead("../data/day2.txt").strip().splitlines(false)
+
   loseValue = 0
   drawValue = 3
   winValue  = 6
@@ -10,8 +12,6 @@ const
   scissorsValue = 3
 
 proc first*(): int =
-  const
-    data = staticRead("../data/day2.txt").strip().splitlines(false)
 
   var
     moves: seq[string]
@@ -40,9 +40,6 @@ proc first*(): int =
       of "z": result += drawValue+scissorsValue
     
 proc second*(): int = 
-  const
-    data = staticRead("../data/day2.txt").strip().splitlines(false)
-  
   var
     moves: seq[string]
     enemyMove, myMove: string

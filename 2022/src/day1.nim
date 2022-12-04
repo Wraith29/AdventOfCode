@@ -1,9 +1,9 @@
 import strutils, math, algorithm
 
+const
+  data = staticRead("../data/day1.txt").strip().split("\n\n")
+
 proc first*(): int =
-  const
-    data = staticRead("../data/day1.txt").strip().split("\n\n")
-  
   var tot = 0
   for item in data:
     for line in item.split("\n"):
@@ -13,9 +13,6 @@ proc first*(): int =
     tot = 0
 
 proc second*(): int =
-  const
-    data = staticRead("../data/day1.txt").strip().split("\n\n")
-  
   var
     values = newSeq[int]()
     value: int

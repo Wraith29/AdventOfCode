@@ -1,6 +1,8 @@
 import strutils
 
-const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const 
+  data = staticRead("../data/day3.txt").strip().splitlines(false)
+  letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 proc value(chr: char): int =
   for idx, letter in letters:
@@ -8,9 +10,6 @@ proc value(chr: char): int =
       return idx+1
 
 proc first*(): int =
-  const
-    data = staticRead("../data/day3.txt").strip().splitlines(false)
-
   var
     midpoint: int
     firstHalf, secondHalf: string
@@ -27,9 +26,6 @@ proc first*(): int =
         break
 
 proc second*(): int =
-  const
-    data = staticRead("../data/day3.txt").strip().splitlines(false)
-
   var
     idx = 0
     elfOne, elfTwo, elfThree: string

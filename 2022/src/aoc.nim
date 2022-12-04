@@ -1,7 +1,8 @@
 import
   day1,
   day2,
-  day3
+  day3,
+  day4
 
 proc main: int =
   echo "Day 1"
@@ -13,6 +14,9 @@ proc main: int =
   echo "Day 3:"
   echo "  Part 1: ", day3.first()
   echo "  Part 2: ", day3.second()
+  echo "Day 4:"
+  echo "  Part 1: ", day4.first()
+  echo "  Part 2: ", day4.second()
   
   return 0
 
